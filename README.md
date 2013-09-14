@@ -1,7 +1,7 @@
 gitlab-installer
 ================
 
-### Installer for GitLab/GitLabHQ on RHEL 5 and 6 (Red Hat Enterprise Linux and CentOS) ###
+### Installer for GitLab/GitLabHQ on CentOS 6 ###
 
 - Fully unattended
 - MySQL or SQLite database (defaulting to MySQL)
@@ -9,16 +9,12 @@ gitlab-installer
 
 ### Install on EL6 ###
 
-    curl https://raw.github.com/mattias-ohlsson/gitlab-installer/master/gitlab-install-el6.sh | bash
-
-### Install on EL5 ###
-
-    curl https://raw.github.com/mattias-ohlsson/gitlab-installer/master/gitlab-install-el5.sh | bash
+    curl https://raw.github.com/benjy14/gitlab-installer/master/gitlab-install-el6.sh | bash
 
 ### Check status (diagnostic) ###
 
     su - git -c "cd gitlab;bundle exec rake gitlab:check RAILS_ENV=production"
 
-### Donate if you like it ###
 
+### Original Fork ###
 Flattr [my profile](https://flattr.com/profile/mattiasohlsson "Mattias Ohlsson on Flattr") to support this!
