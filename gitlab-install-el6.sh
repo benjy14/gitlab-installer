@@ -164,7 +164,7 @@ export force=yes
 su git -c "bundle exec rake gitlab:setup RAILS_ENV=production"
 
 ## Install init script
-curl --output /etc/init.d/gitlab https://raw.github.com/gitlabhq/gitlab-recipes/master/init.d/gitlab-centos
+curl --output /etc/init.d/gitlab https://raw.github.com/benjy14/gitlab-installer/master/gitlab-unicorn.sh
 chmod +x /etc/init.d/gitlab
 
 ## Fix for issue 30
