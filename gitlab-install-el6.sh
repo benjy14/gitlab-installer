@@ -136,6 +136,7 @@ su git -c "cp config/unicorn.rb.example config/unicorn.rb"
 ### Listen on localhost:3000
 sed -i "s/^listen/#listen/g" /home/git/gitlab/config/unicorn.rb
 sed -i "s/#listen \"127.0.0.1:8080\"/listen \"127.0.0.1:3000\"/g" /home/git/gitlab/config/unicorn.rb
+sed -i "s/timeout 30/timeout 60/g" /home/git/gitlab/config/unicorn.rb
 
 ### Copy database congiguration
 su git -c "cp config/database.yml.mysql config/database.yml"
